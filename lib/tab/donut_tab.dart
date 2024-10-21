@@ -43,66 +43,6 @@ class _DonutTabState extends State<DonutTab> {
             },
           ),
         ),
-
-        // Footer con total del carrito y botón para ver carrito
-        Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
-                spreadRadius: 5,
-                blurRadius: 7,
-                offset: const Offset(0, 3),
-              ),
-            ],
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              // Cantidad de items y total
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    '$cartItems Items | \$$cartTotal',
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                    ),
-                  ),
-                  Text(
-                    'Delivery Charges included',
-                    style: TextStyle(
-                      fontSize: 13,
-                      color: Colors.grey[600],
-                    ),
-                  ),
-                ],
-              ),
-
-              // Botón para ver el carrito
-              ElevatedButton(
-                onPressed: () {
-                  // Acción al presionar el botón de 'View Cart'
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink[300],
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                ),
-                child: const Text(
-                  'View Cart',
-                  style: TextStyle(
-                    color: Colors.white, 
-                    fontSize: 18)),
-               ),
-            ],
-          ),
-        ),
       ],
     );
   }
